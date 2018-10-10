@@ -46,7 +46,7 @@ function SineWaveGenerator(options) {
     this.width = this.el.width = window.innerWidth * this.dpr;
     this.height = this.el.height = .3*window.innerHeight * this.dpr;
     this.el.style.width = window.innerWidth + 'px';
-    this.el.style.height = .4*window.innerHeight + 'px';
+    this.el.style.height = .3*window.innerHeight + 'px';
     
     this.waveWidth = this.width * 0.95;
     this.waveLeft = this.width * 0.025;
