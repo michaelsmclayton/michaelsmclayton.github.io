@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Michael S. Clayton (PhD)</title>
+    <title>Michael S. Clayton</title>
     <link rel="shortcut icon" href="brain.ico" type="image/x-icon">
 	<link rel="icon" href="brain.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -42,20 +42,16 @@
 
     <div id="lead">
         <div id="lead-content">
-            <div id="matterJSElement" style="display: flex; align-content: center; justify-content: center">
-                <svg id="svg" style="display: none;" height="190mm" width="130mm" version="1.1" viewBox="0 0 130 190">
-                <g transform="translate(0,-47)">
-                    <path id="innerC" d="m45.716 234.61c-13.121 9.3252-17.499 25.225-11.878 39.551 5.6212 14.326 20.676 23 36.737 21.167 16.061-1.8334 29.141-13.719 31.919-29.004" fill="none" stroke="#000" strokeWidth=".2"/>
-                    <path id="outerC" d="m122.82 269.78c-4.5653 25.049-24.672 44.417-51.02 47.43-26.348 3.0131-51.04-11.194-60.253-34.667-9.2135-23.474-0.66201-50.389 20.867-65.677" fill="none" stroke="#000" strokeWidth=".2"/>
-                    <path id="leftM" d="m48.119 100.42 0.18899 54.996-20.411-0.18899 0.13364-88.657 20.078 0.11165 45.745 61.331-14.968 12.36-30.767-39.952" fill="none" stroke="#fff" strokeWidth="3.565"/>
-                    <path id="rightM" d="m117.67 170.31 0.26727 28.464 20.446-9.4881 0.13364-101.56-9.889-13.096-32.874 26.46 10.29 14.032 11.493-9.3544 0.13363 56.928-10.951 5.8299c1.6192 2.987 1.2722 2.3824 3.1619 5.642z" fill="none" stroke="#fff" strokeWidth="3.4"/>
-                </g>
-                </svg>
-                <div id="personalDescriptionBox" style="position: absolute; text-align: center; margin-top: 60vh; width: 55vh; border: 0px solid">
+            <div id="bg" style="align-content: center; justify-content: center">
+                <div class="row" id="personalDescriptionBox" style="position: relative; align-content: center; justify-content: center; border: 0px solid">
                     <p id="name" align=center style="font-family: Helvetica; font-size: 1.3em; color: #FFF"><b>MICHAEL S. CLAYTON (PhD)</b></p>
                     <p id="description" align=center style="font-family: Helvetica; font-size: 1.3em; color: #FFF"><i>neuroscientist & programmer</i></p>
                 </div>
+                <div class="row" id="canvas-wrapper"">
+                    <canvas id="waves""></canvas>
+                </div>
             </div>
+
         </div>
         <!-- End #lead-content -->
         <div id="lead-overlay"></div>
@@ -258,14 +254,13 @@
     </div>
     <!-- End #education -->
 
-
     <div id="other-experience" class="background-alt">
         <div id="other-experiences">
             <h2 class="heading">Other Experience</h2>
             <div class="experiences-block">
                 <h3>Cambridge Cognition</h3>
-                <span class="education-date">April 2018 - July 2018</span><br>
-                <h4 style="line-height:1.5em; font-size: 1.2em">Science Intern</h4>
+                <span class="education-date">April - July 2018</span><br>
+                <h4 style="line-height:0.5em; font-size: 1.2em">Science Intern</h4>
                 <a href="http://www.cambridgecognition.com/">
                     <div id="camcog" class="col-md-4 imagelogo" style="height: 6em; float: right"></div>
                 </a>
@@ -282,35 +277,29 @@
                 </ul>
             </div>
             <div class="experiences-block">
-                <h3>Cambridge Cognition</h3>
-                <span class="education-date">April 2018 - July 2018</span><br>
-                <h4 style="line-height:1.5em; font-size: 1.2em">Science Intern</h4>
+                <h3>Institute of Cognitive Neuroscience (UCL)</h3>
+                <span class="education-date">June - August 2012</span><br>
+                <h4 style="line-height:0.5em; font-size: 1.2em">Summer Internship</h4>
                 <a href="http://www.cambridgecognition.com/">
                     <div id="camcog" class="col-md-4 imagelogo" style="height: 6em; float: right"></div>
                 </a>
                 <ul>
                     <li id="bulletpoint">
-                        Created a number of online cognitive tasks to measure sustained attention (using Javascript / NodeJS, HTML, CSS).
+                        Supervised by Prof. Patrick Haggard, I worked with Dr. Flavia Mancini on a study investigating the cross-sensory influence of visual self-perception on the perceived qualities of affective touch (e.g. pleasantness).
                     </li>
                     <li id="bulletpoint">
-                        Learned how to host and run online, cognitive psychology experiment sMechnical Turk and Prolific Academic.
-                    </li>
-                    <li id="bulletpoint">
-                        Learned about software development cycles, version control (i.e. Git), and the digital health industry.
+                        My responsibilities included setting up and running the experiments, as well as helping with data analysis.
                     </li>
                 </ul>
             </div>
         </div>
-        
     </div>
     <!-- End #skills -->
 
-    <script language="javascript" type="text/javascript" src="libraries/decomp.js"></script>
-    <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
-    <script language="javascript" type="text/javascript" src="libraries/matter.min.js"></script>
-    <script language="javascript" type="text/javascript" src="sketch.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script src="js/sine-waves.js"></script>
+    <script src="js/eegOscillations.js"></script>
 </body>
 
 </html>
