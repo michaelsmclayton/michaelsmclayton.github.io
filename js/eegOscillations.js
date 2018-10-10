@@ -43,9 +43,9 @@ function SineWaveGenerator(options) {
     this.dpr = window.devicePixelRatio || 1;
     
     this.width = this.el.width = window.innerWidth * this.dpr;
-    this.height = this.el.height = .3*window.innerHeight * this.dpr;
+    this.height = this.el.height = .5*window.innerHeight * this.dpr;
     this.el.style.width = window.innerWidth + 'px';
-    this.el.style.height = .4*window.innerHeight + 'px';
+    this.el.style.height = .6*window.innerHeight + 'px';
     
     this.waveWidth = this.width * 0.95;
     this.waveLeft = this.width * 0.025;
@@ -95,7 +95,7 @@ function SineWaveGenerator(options) {
     var amp = this.amplitude;
    
     // Center the waves
-    var yAxis = this.height / 2; 
+    var yAxis = this.height * .6; 
     
     // Styles
     this.ctx.lineWidth = lineWidth * this.dpr;
@@ -173,14 +173,6 @@ function SineWaveGenerator(options) {
         lineWidth: 2,
         amplitude: -100,
         wavelength: 50,
-        segmentLength: 10,
-  //       strokeStyle: 'rgba(255, 255, 255, 0.2)'
-      },
-      {
-        timeModifier: 1,
-        lineWidth: 2,
-        amplitude: -100,
-        wavelength: 30,
         segmentLength: 10,
   //       strokeStyle: 'rgba(255, 255, 255, 0.2)'
       },
