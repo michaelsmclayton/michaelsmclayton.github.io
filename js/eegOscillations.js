@@ -33,7 +33,6 @@ function SineWaveGenerator(options) {
   SineWaveGenerator.prototype.amplitude = 50;
   SineWaveGenerator.prototype.wavelength = 50;
   SineWaveGenerator.prototype.segmentLength = 10;
-  
   SineWaveGenerator.prototype.lineWidth = 2;
   SineWaveGenerator.prototype.strokeStyle  = 'rgba(255, 255, 255, 1)';
   
@@ -46,7 +45,7 @@ function SineWaveGenerator(options) {
     this.width = this.el.width = window.innerWidth * this.dpr;
     this.height = this.el.height = .3*window.innerHeight * this.dpr;
     this.el.style.width = window.innerWidth + 'px';
-    this.el.style.height = .3*window.innerHeight + 'px';
+    this.el.style.height = .4*window.innerHeight + 'px';
     
     this.waveWidth = this.width * 0.95;
     this.waveLeft = this.width * 0.025;
