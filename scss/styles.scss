@@ -486,7 +486,7 @@ footer {
     h5 {
         margin-top: 0;
         max-width: 700px;
-        font-size: 0.9em;
+        font-size: 1em;
         font-weight: 50;
     }
 
@@ -499,8 +499,8 @@ footer {
 }
 
 .cropcircle{
-    width: 10em;
-    height: 10em;
+    width: 8em;
+    height: 8em;
     border-radius: 100%;
     background: #eee no-repeat center;
     background-size: cover;
@@ -638,20 +638,32 @@ footer {
     }
 
     h3 {
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-bottom: .5em;
     }
 
+    span {
+        color: $heading;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    li {
+        font-weight: 500;
+        color: $heading;
+        font-size: .85em;
+    }
+
     h4 {
-        font-size: 1.2em;
+        font-size: 1.0em;
         margin-top: .75em;
         margin-bottom: 1.75em;
     }
 }
 
 .imagelogo{
-    width: 10em;
-    height: 10em;
+    width: 9em;
+    height: 9em;
     background: #eee no-repeat center;
     background-size: cover;
     float: right
@@ -670,6 +682,11 @@ footer {
 #camcog{
     margin-left: 2vw;
     background-image: url("../images/cambridge-cognition-logo.png");
+}
+
+#ucl{
+    margin-left: 2vw;
+    background-image: url("../images/ucl.png");
 }
 
 .education-block {
@@ -853,7 +870,13 @@ footer {
     span {
         color: $text;
         float: right;
-        font-size: 1.2em;
+        font-size: 1.0em;
+    }
+
+    li {
+        font-weight: 500;
+        color: $heading;
+        font-size: .85em;
     }
 
     h4 {
@@ -861,7 +884,7 @@ footer {
         clear: both;
         font-weight: 500;
         margin: 0 0 15px 0;
-        font-size: 10em;
+        font-size: 1em;
     }
 
     p, ul {
@@ -886,12 +909,12 @@ footer {
     }
 
     h3 {
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-bottom: .5em;
     }
 
     h4 {
-        font-size: 1.2em;
+        font-size: 1.0em;
         margin-top: .75em;
         margin-bottom: 1.75em;
     }
