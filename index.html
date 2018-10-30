@@ -12,6 +12,29 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+    .collapsible {
+        color: #333;
+        cursor: pointer;
+        margin-left: -5px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: .7em;
+    }
+
+    .active, .collapsible:hover {
+        background-color: #EEE;
+    }
+
+    .content {
+        display: none;
+        font-size: .8em;
+        overflow: hidden;
+        color: black;
+    }
+    </style>
 </head>
 
 <body>
@@ -71,10 +94,10 @@
                 <div class="col-md-4">
                     <h2 class="heading">ABOUT ME</h2>
                     <div id="face" style="margin-top: 8vh" class="col-md-4 cropcircle"></div>
-                    <h5>I was born in southern England in November 1990. After receiving a BSc in Psychology from the University of Exeter in 2014, I completed a PhD in Experimental Psychology at the University of Oxford.</h5>
+                    <a href="https://twitter.com/MClayton_" class="fa fa-twitter" style="font-size: 1.8em; margin-left: 1vw"></a>
+                    <h5>I was born in southern England in November 1990. After receiving a BSc in Psychology from the University of Exeter in 2014, I completed a PhD in Experimental Psychology at the University of Oxford (<a href="https://www.psy.ox.ac.uk/team/michael-clayton">see department profile page</a>).</h5>
                     <h5>During my doctoral research, I focused on how sustained visual attention might be supported by oscillations in human brain activity. Specifically, I investigated the ways in which visual attention might be supported by alpha oscillations (7-13 Hz) in visual regions of the brain. I did this by delivering alternating electrical currents to posterior cortex at various frequencies, and observing the effects this electrical stimulation on visual attention task performance. The results of this research have been published in the <a href="./FinalPapers/Electrical Stimulation of Alpha Oscillations Stabilizes Performance on Visual Attention Tasks.pdf"><i>Journal of Experimental Psychology: General</i></a>, and <a href="https://www.frontiersin.org/articles/10.3389/fnins.2018.00067/full"><i>Frontiers in Neuroscience</i></a></h5>
                     <h5>After submitted my PhD thesis, I worked as a Science Intern for <a href="http://www.cambridgecognition.com/">Cambridge Cognition</a> - a digital neuroscience company which develops cognitive tests for use in pharmaceutical trials. Here, I learned about software is developed in commercial environments (e.g. version control, development life cycles), and how to run cognitive psychology experiments using online platforms (namely, <a href="https://www.mturk.com/">Mechanical Turk</a> and <a href="https://prolific.ac/">Prolific Academic</a>).</h5>
-                    
                 </div>
                 <div class="col-md-4">
                     <h2 class="heading">INTERESTS</h2>
@@ -91,7 +114,7 @@
                                 <h3 align=center>
                                     <u>NEUROIMAGING AND BRAIN STIMULATION</u>
                                 </h3>
-                                <h5 align=center>I used <a ref="https://en.wikipedia.org/wiki/Electroencephalography">electroencephalography (EEG)</a> to record oscillations in human brain activity. I analysed the frequency and phase information contained within this activity using techniques described in <a href="https://mitpress.mit.edu/books/analyzing-neural-time-series-data">this great book</a>! In order to manipulate brain activity, I used transcranial alternating current stimulation (<a href="https://www.frontiersin.org/articles/10.3389/fpsyt.2014.00162/full">see here for a description</a>). I also have experience with <a href="https://en.wikipedia.org/wiki/Eye_tracking">eye-tracking</a> and <a href="https://en.wikipedia.org/wiki/Transcranial_magnetic_stimulation">transcranial magnetic stimulation</a></h5>
+                                <h5 align=center>I used <a ref="https://en.wikipedia.org/wiki/Electroencephalography">electroencephalography (EEG)</a> to record oscillations in human brain activity. I analysed the frequency and phase information contained within this activity using techniques described in <a href="https://mitpress.mit.edu/books/analyzing-neural-time-series-data">this great book</a>! In order to manipulate brain activity, I used transcranial alternating current stimulation (<a href="https://www.frontiersin.org/articles/10.3389/fpsyt.2014.00162/full">see here for a description</a>). I also have experience with <a href="https://en.wikipedia.org/wiki/Eye_tracking">eye-tracking</a> and <a href="https://en.wikipedia.org/wiki/Transcranial_magnetic_stimulation">transcranial magnetic stimulation</a>.</h5>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -99,8 +122,8 @@
                                 <u>PROGRAMMING LANGUAGES</u>
                             </h3>
                             <h5 style="margin-top: 2vh;" align=center>In addition to psychology and neuroscience, I have a strong interest in programming languages. During my PhD, I used <a href="https://en.wikipedia.org/wiki/MATLAB"><b>MATLAB</b></a> extensively for stimulus design and presentation (using <a href="http://psychtoolbox.org/">Psychtoolbox</a>). I also used MATLAB for my analyses of behavioural and neural oscillation data (using libraries like <a href="https://sccn.ucsd.edu/eeglab/index.php">EEGLAB</a> and <a href="http://www.fieldtriptoolbox.org/">Fieldtrip</a>). I have commonly used <a href="https://www.ibm.com/analytics/spss-statistics-software">SPSS</a>, but have more recently transferred entirely to <a href="https://en.wikipedia.org/wiki/R_(programming_language)"><b>R</b></a> for my statistical analyses.</h5>
-                            <h5>As well as traditional cognitive testing, I am also very interested in the possibility of running cognitive and perceptual experiments online. To develop these online experiments, I have therefore learned front-end web development languages like <a href="https://en.wikipedia.org/wiki/HTML"><b>HTML</b></a>, <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"><b>CSS</b></a>, and <a href="https://en.wikipedia.org/wiki/JavaScript"><b>Javascript</b></a>. During my internship at Cambridge Cognition, I used these languages (as well as Javascript libraries like <a href="https://reactjs.org/">React</a>) to develop cognitive tasks that are suitable for online use. In addition though, I also learned how to use languages like <a href="https://en.wikipedia.org/wiki/Node.js"><b>NodeJS</b></a> for back-end programming, <a href="https://en.wikipedia.org/wiki/Git"><b>Git</b></a> for version control, and <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)"><b>Bash/Unix scripting.</b></a></h5>
-                            <h5>Most recently, I have also been learning <a ref="https://en.wikipedia.org/wiki/Python_(programming_language)"><b>Python</b></a> for the purposes of running machine learning algorithms (using libraries like <a href="https://en.wikipedia.org/wiki/TensorFlow">TensorFlow</a>). I am particularly interesting in using <a href="">convolutional neural networks</a> to better understand how the brain categorises visual inputs.</h5>
+                            <h5>As well as traditional cognitive testing, I am also very interested in the possibility of running cognitive and perceptual experiments online. To develop these online experiments, I have therefore learned front-end web development languages like <a href="https://en.wikipedia.org/wiki/HTML"><b>HTML</b></a>, <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets"><b>CSS</b></a>, and <a href="https://en.wikipedia.org/wiki/JavaScript"><b>Javascript</b></a>. During my internship at Cambridge Cognition, I used these languages (as well as Javascript libraries like <a href="https://reactjs.org/">React</a>) to develop cognitive tasks that are suitable for online use. In addition though, I also learned how to use languages like <a href="https://en.wikipedia.org/wiki/Node.js"><b>NodeJS</b></a> for back-end programming, <a href="https://en.wikipedia.org/wiki/Git"><b>Git</b></a> for version control, <a href="https://en.wikipedia.org/wiki/Docker_(software)"><b>Docker</b></a> for machine virtualisation, and <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)"><b>Bash/Unix scripting</b></a>.</h5>
+                            <h5>Most recently, I have also been learning <a ref="https://en.wikipedia.org/wiki/Python_(programming_language)"><b>Python</b></a> for the purpose of running machine learning algorithms (using libraries like <a href="https://en.wikipedia.org/wiki/TensorFlow">TensorFlow</a>). I am particularly interested in using <a href="">convolutional neural networks</a> to better understand how the brain categorises visual inputs.</h5>
                             <br>
                         </div>
                     </div>
@@ -128,6 +151,10 @@
                         </a>
                         <h3><b>Michael S. Clayton</b>, Nick Yeung, Roi Cohen Kadosh</h3><br>
                         <h3><i>Trends in Cognitive Sciences 19 (4), 188-195</i></h3>
+                        <button class="collapsible">ABSTRACT</button>
+                        <div class="content">
+                            We rely on sustained attention to protect task performance against fatigue and distraction. Time-related variations in attention correlate with amplitude changes of specific cortical oscillations. However, the ways in which these oscillations might support sustained attention, how these oscillations are controlled, and the extent to which they influence one another remain unclear. We address this issue by proposing an oscillatory model of sustained attention. Within this framework, sustained attention relies on frontomedial theta oscillations, inter-areal communication via low-frequency phase synchronisation, and selective excitation and inhibition of cognitive processing through gamma and alpha oscillations, respectively. Sustained attention also relies on interactions between these oscillations across attention-related brain networks.
+                        </div>
                     </td>
                     <td align="center">
                     <a href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=4531170663848451210">
@@ -149,6 +176,10 @@
                         </a>
                         <h3>Ruairidh Battleday, Timothy Muller, <b>Michael S. Clayton</b>, Roi Cohen Kadosh </h3><br>
                         <h3><i>Frontiers in Psychiatry 5, 162</i></h3>
+                        <button class="collapsible">ABSTRACT</button>
+                        <div class="content">
+                                In recent decades, our appreciation of the complexity of the brain has deepened immensely, as has our understanding of how it performs key functions. In the face of such complexity, and given the rising cost of neuropsychiatric illness (1), an intriguing question is whether we can promote further understanding, and in some cases enhancement, of the typical and atypical brain by targeted modulation of its activity. Notably, transcranial alternating current stimulation (tACS)–which involves transcranial application of weak sinusoidal electrical currents (2)–seems ideally suited to address this question, as it has been demonstrated to modulate endogenous oscillatory electrical activity (3), enhance cognitive functions (4–7), and provide support in neurological disease (8, 9). However, a complete mechanistic pathway between the neuronal and cognitive effects of tACS remains in need of explication, precluding both significant theoretical contribution by tACS studies, and the development of more adaptive neuroenhancement regimes. Therefore, in this Opinion article, we briefly review the role of oscillatory neuronal activity in cognition, before outlining one potential pathway by which the interaction between tACS and endogenous oscillations at a network level may be reconciled with its effects on broader cognitive functions.
+                        </div>
                     </td>
                     <td align="center">
                     <a href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=11983960115731822038&as_sdt=5">
@@ -170,6 +201,10 @@
                         </a>
                         <h3><b>Michael S. Clayton</b>, Nick Yeung, Roi Cohen Kadosh</h3><br>
                         <h3><i>European Journal of Neuroscience</i></h3>
+                        <button class="collapsible">ABSTRACT</button>
+                        <div class="content">
+                            A central feature of human brain activity is the alpha rhythm: a 7–13 Hz oscillation observed most notably over occipitoparietal brain regions during periods of eyes‐closed rest. Alpha oscillations covary with changes in visual processing and have been associated with a broad range of neurocognitive functions. In this article, we review these associations and suggest that alpha oscillations can be thought to exhibit at least five distinct ‘characters’: those of the inhibitor, perceiver, predictor, communicator and stabiliser. In short, while alpha oscillations are strongly associated with reductions in visual attention, they also appear to play important roles in regulating the timing and temporal resolution of perception. Furthermore, alpha oscillations are strongly associated with top‐down control and may facilitate transmission of predictions to visual cortex. This is in addition to promoting communication between frontal and posterior brain regions more generally, as well as maintaining ongoing perceptual states. We discuss why alpha oscillations might associate with such a broad range of cognitive functions and suggest ways in which these diverse associations can be studied experimentally.
+                        </div>
                     </td>
                     <td align="center">
                     <a href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=15654860799153898398">
@@ -191,6 +226,26 @@
                         </a>
                         <h3><b>Michael S. Clayton</b>, Nick Yeung, Roi Cohen Kadosh</h3><br>
                         <h3><i>Frontiers in Neuroscience 12, 67</i></h3>
+                        <button class="collapsible">ABSTRACT</button>
+                        <div class="content">
+                            Neural oscillations in the alpha band (7–13 Hz) are commonly associated with disengagement of visual attention. However,
+                            recent studies have also associated alpha with processes of attentional control and stability. We addressed this issue in
+                            previous experiments by delivering transcranial alternating current stimulation at 10 Hz over posterior cortex during visual
+                            tasks (alpha tACS). As this stimulation can induce reliable increases in EEG alpha power, and given that performance on each
+                            of our visual tasks was negatively associated with alpha power, we assumed that alpha tACS would reliably impair visual
+                            performance. However, alpha tACS was instead found to prevent both deteriorations and improvements in visual performance
+                            that otherwise occurred during sham & 50 Hz tACS. Alpha tACS therefore appeared to exert a stabilizing effect on visual
+                            attention. This hypothesis was tested in the current, pre-registered experiment by delivering alpha tACS during a task
+                            that required rapid switching of attention between motion, color, and auditory subtasks. We assumed that, if alpha tACS
+                            stabilizes visual attention, this stimulation should make it harder for people to switch between visual tasks, but should
+                            have little influence on transitions between auditory and visual subtasks. However, in contrast to this prediction, we
+                            observed no evidence of impairments in visuovisual vs. audiovisual switching during alpha vs. control tACS. Instead, we
+                            observed a trend-level reduction in visuoauditory switching accuracy during alpha tACS. Post-hoc analyses showed no effects
+                            of alpha tACS in response time variability, diffusion model parameters, or on performance of repeat trials. EEG analyses
+                            also showed no effects of alpha tACS on endogenous or stimulus-evoked alpha power. We discuss possible explanations for
+                            these results, as well as their broader implications for current efforts to study the roles of neural oscillations in
+                            cognition using tACS.
+                        </div>
                     </td>
                     <td align="center">
                     <a href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=15746279193612912922&as_sdt=5">
@@ -212,6 +267,24 @@
                         </a>
                         <h3><b>Michael S. Clayton</b>, Nick Yeung, Roi Cohen Kadosh</h3><br>
                         <h3><i>Journal of Experimental Psychology: General</i></h3>
+                        <button class="collapsible">ABSTRACT</button>
+                        <div class="content">
+                                Neural oscillations in the alpha band (7–13 Hz) have long been associated with reductions in attention.
+                                However, recent studies have suggested a more nuanced perspective in which alpha oscillations also
+                                facilitate processes of cognitive control and perceptual stability. Transcranial alternating current stimulation
+                                (tACS) over occipitoparietal cortex at 10 Hz (alpha-tACS) can selectively enhance EEG alpha
+                                power. To assess the contribution of alpha oscillations to attention, we delivered alpha-tACS across four
+                                experiments while 178 participants performed sustained attention tasks. Poor performance on all visual
+                                tasks was previously associated with increased EEG alpha power. We therefore predicted initially that
+                                alpha-tACS would consistently impair visual task performance. However, alpha-tACS was instead found
+                                to prevent deteriorations in visual performance that otherwise occurred during sham- and 50 Hz-tACS.
+                                This finding was observed in two experiments, using different sustained attention tasks. In a separate
+                                experiment, we also found that alpha-tACS limited improvements on a visual task where learning was
+                                otherwise observed. Consequently, alpha-tACS appeared to exert a consistently stabilizing effect on
+                                visual attention. Such effects were not seen in an auditory control task, indicating specificity to the visual
+                                domain. We suggest that these results are most consistent with the view that alpha oscillations facilitate
+                                processes of top-down control and attentional stability
+                        </div>
                     </td>
                     <td align="center"></td>  
                     <td align="center">in press</td>
@@ -240,10 +313,10 @@
                     Supervised by <a href="https://www.psy.ox.ac.uk/team/roi-cohenkadosh">Roi Cohen Kadosh</a> and <a href="https://www.psy.ox.ac.uk/team/nicholas-yeung">Nick Yeung</a>
                 </li>
                 <li id="bulletpoint">
-                    Focused on improving sustained attention by studying how cognitive fatigue is reflected in brain activity, and by modulating this activity using non-invasive brain stimulation
+                    Focused on understanding the roles played by alpha oscillations (7 - 13 Hz) over occipitoparietal cortex in sustained, visual attention. Research involved the modulation of brain activity using transcranial alternating current stimulation, and the measurement of these effects using behavioural analyses and electroencephalography
                 </li>
                 <li id="bulletpoint">
-                    Collected behavioural and electroenceph-alographic data from more than 250 participants
+                    Collected data from more than 250 participants (both single and multi-session experiments)
                 </li>
                 <li id="bulletpoint">
                     <a href="./FinalPapers/MichaelClaytonDPhil - Understanding Occipitoparietal Alpha Oscillations.pdf">Click here to download</a> the full PDF of my thesis
@@ -298,10 +371,10 @@
                 </a>
                 <ul>
                     <li id="bulletpoint">
-                        Created a number of online cognitive tasks to measure sustained attention (using Javascript / NodeJS, HTML, CSS).
+                        Designed and developed four tasks of sustained attention tasks for online testing (using front-end web technologies)
                     </li>
                     <li id="bulletpoint">
-                        Learned how to host and run online, cognitive psychology experiment sMechnical Turk and Prolific Academic.
+                        Used large-scale tesing on online platforms (i.e. Mechnical Turk and Prolific Academic) to determine which attention task was most suitable for online cognitive testing.
                     </li>
                     <li id="bulletpoint">
                         Learned about software development cycles, version control (i.e. Git), and the digital health industry.
@@ -332,6 +405,22 @@
     <script src="js/scripts.min.js"></script>
     <script src="js/sine-waves.js"></script>
     <script src="js/eegOscillations.js"></script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+            });
+        }
+    </script>
 </body>
 
 </html>
