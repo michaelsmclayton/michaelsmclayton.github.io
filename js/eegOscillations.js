@@ -163,13 +163,6 @@ function SineWaveGenerator(options) {
       },
       {
         timeModifier: 1,
-        lineWidth: 3,
-        amplitude: 150,
-        wavelength: 70,
-  //       strokeStyle: 'rgba(255, 255, 255, 0.3)'
-      },
-      {
-        timeModifier: 1,
         lineWidth: 2,
         amplitude: -100,
         wavelength: 50,
