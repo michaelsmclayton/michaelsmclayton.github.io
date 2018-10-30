@@ -95,7 +95,7 @@ function SineWaveGenerator(options) {
     var amp = this.amplitude;
    
     // Center the waves
-    var yAxis = this.height * .75; 
+    var yAxis = this.height * 1; 
     
     // Styles
     this.ctx.lineWidth = lineWidth * this.dpr;
