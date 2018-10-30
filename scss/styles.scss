@@ -470,6 +470,11 @@ footer {
 
     h2 {
         color: $heading;
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
     }
 
     h4 {
@@ -481,7 +486,7 @@ footer {
     h5 {
         margin-top: 0;
         max-width: 700px;
-        font-size: 1.1em;
+        font-size: 0.9em;
         font-weight: 50;
     }
 
@@ -742,6 +747,7 @@ footer {
 
     h3 {
         font-weight: 500;
+        font-size: 1em;
         float: left;
         margin: 0;
         color: $heading;
@@ -750,11 +756,14 @@ footer {
     td {
         padding-bottom: 2em;
         max-width: 40vw;
-        font-size: 1.1em;
     }
 
     span {
-        font-size: 1.2em;
+        font-size: 1.1em;
+    }
+
+    i {
+        font-size: .9em;
     }
 
     h4 {
