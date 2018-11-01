@@ -147,7 +147,7 @@ function SineWaveGenerator(options) {
     speed: 5,
     waves: [
       {
-        timeModifier: 1,
+        timeModifier: 1.25,
         lineWidth: 4,
         amplitude: 150,
         wavelength: 200,
@@ -162,7 +162,7 @@ function SineWaveGenerator(options) {
   //       strokeStyle: 'rgba(255, 255, 255, 0.3)'
       },
       {
-        timeModifier: 1,
+        timeModifier: 1.5,
         lineWidth: 2,
         amplitude: -100,
         wavelength: 50,
