@@ -161,9 +161,7 @@
                         </div>
                     </td>
                     <td align="center">
-                    <a href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=4531170663848451210">
-                        105
-                    </a>
+                    <a id="ticsCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=4531170663848451210"></a>
                     </td>  
                     <td align="center">2015</td>
                     <td align="center">
@@ -186,9 +184,7 @@
                         </div>
                     </td>
                     <td align="center">
-                    <a href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=11983960115731822038&as_sdt=5">
-                        28
-                    </a>
+                    <a id="firstFrontiersCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=11983960115731822038&as_sdt=5"></a>
                     </td>  
                     <td align="center">2014</td>
                     <td align="center">
@@ -211,9 +207,7 @@
                         </div>
                     </td>
                     <td align="center">
-                    <a href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=15654860799153898398">
-                        8
-                    </a>
+                    <a id="ejnCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=15654860799153898398"></a>
                     </td>  
                     <td align="center">2017</td>
                     <td align="center">
@@ -252,9 +246,7 @@
                         </div>
                     </td>
                     <td align="center">
-                    <a href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=15746279193612912922&as_sdt=5">
-                        2
-                    </a>
+                    <a id="secondFrontiersCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=15746279193612912922&as_sdt=5"></a>
                     </td>  
                     <td align="center">2018</td>
                     <td align="center">
@@ -409,10 +401,18 @@
     <script src="js/scripts.min.js"></script>
     <script src="js/sine-waves.js"></script>
     <script src="js/eegOscillations.js"></script>
+    <script src="nodescripts/citationCounts.js"></script>
+    <script>
+        document.getElementById('ticsCitations').innerHTML = ticsCitations
+        document.getElementById('firstFrontiersCitations').innerHTML = firstFrontiersCitations
+        document.getElementById('ejnCitations').innerHTML = ejnCitations
+        document.getElementById('secondFrontiersCitations').innerHTML = secondFrontiersCitations
+        document.getElementById('jepgCitations').innerHTML = jepgCitations
+    </script>
+    <!--Javascript for toggle of abstracts-->
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
-        
         for (i = 0; i < coll.length; i++) {
             coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
@@ -426,5 +426,4 @@
         }
     </script>
 </body>
-
 </html>
