@@ -25,6 +25,7 @@ rp(options)
         }
 
         // Find all article citation
+        citationCounts = extractCapturedGroups(/gsc_g_al">(\d*)/g);
         citations = extractCapturedGroups(/gsc_a_ac gs_ibl">(\d*)/g);
         articleNames = extractCapturedGroups(/"gsc_a_at">([\w\s:]*)/g);
 
@@ -34,7 +35,6 @@ rp(options)
                 citations[i] = `' '`
             }
         }
-        console.log(citations)
 
         // Save JS file
         var fileContent = 
