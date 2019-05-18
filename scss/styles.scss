@@ -352,8 +352,8 @@ footer {
 #lead {
     position: relative;
     height: 55vh;
-    min-height: 0px;
-    max-height: 400px;
+    min-height: 400px;
+    max-height: 500px;
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -909,7 +909,7 @@ footer {
     }
 }
 
-#other-experiences {
+#industry-experiences {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
