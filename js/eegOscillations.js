@@ -72,6 +72,12 @@ function SineWaveGenerator(options) {
     }
     index = void 0;
     length = void 0;
+
+    if (window.innerWidth<600){
+      document.getElementById('waves').style.display = 'none';
+    } else {
+      document.getElementById('waves').style.display = 'block';
+    }
   }
   
   // Constants
