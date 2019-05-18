@@ -75,7 +75,7 @@ function SineWaveGenerator(options) {
 
     if (window.innerWidth<600){
       document.getElementById('waves').style.display = 'none';
-      document.getElementById('bg').style.maxHeight = '75px';
+      document.getElementById('bg').style.maxHeight = '50px';
     } else {
       document.getElementById('waves').style.display = 'block';
       document.getElementById('bg').style.maxHeight = '200px';
