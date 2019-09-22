@@ -41,8 +41,8 @@ rp(options)
             'var ticsCitations = ' + citations[0] + '; ' +
             'var firstFrontiersCitations = ' + citations[1] + '; ' +
             'var ejnCitations = ' + citations[2] + '; ' +
-            'var secondFrontiersCitations = ' + citations[3] + '; ' +
-            'var jepgCitations = ' + citations[4] + ';'
+            'var jepgCitations = ' + citations[3] + ';' +
+            'var secondFrontiersCitations = ' + citations[4] + '; '
         ;
         var filepath = "citationCounts.js";
         fs.writeFile(filepath, fileContent, (err) => {
