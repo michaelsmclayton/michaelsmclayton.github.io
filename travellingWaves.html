@@ -16,25 +16,25 @@
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
 
-    <body style='background-color: #07A'>
-        <div style="display: flex; font-size: 1.5em; padding-top: 2vh; padding-bottom: 2vh; align-content: center; justify-content: center">
+    <body style='background-color: #3f7693'>
+        <div style="display: flex; font-size: 1.2em; padding-top: 2vh; padding-bottom: 2vh; align-content: center; justify-content: center">
             <a style='color: white;' href='https://michaelsmclayton.github.io/'><u>Back to the home page</u></a>
         </div>
-        <div class="container" style="background-color: white; align-content: center; justify-items: center;">
-            <h1 style='color: black; text-align: center;'>Propagation of neural activity in 2-dimensional networks</h1>
-            <p style="font-size: 1.5em;">
+        <div class="container" style="background-color: white; max-width: 75vw; align-content: center; justify-items: center;">
+            <h1 style='color: black; font-size: 1.25em; text-align: center;'>Propagation of neural activity in 2-dimensional networks</h1>
+            <p style="font-size: 1.0em;">
                 This simulation models different ways of generating travelling (or propagating) waves in neural networks. Here, 400 neurons are arranged in a two-dimensional grid. Connection strengths between neurons are dependent on their Euclidean distance from each other. These distance values are entered into a Gaussian function, such that neurons with the smallest distances have a greatest connection strengths, while strengths get increasingly weaker as inter-neuron distance increases. The simulation shows that different patterns of propagating activity generated using leaky integrate-and-fire neurons and coupled Kuramoto oscillators.
             </p>
         </div>
 
-        <div class="container" style="display: flex;  background-color: white; align-content: center; justify-items: center;">
+        <div class="container" style="display: flex; max-width: 75vw; background-color: white; align-content: center; justify-items: center;">
             <div class="row">
                 <div class="col-sm-12 col-md-6" style="margin-top: 2.5vh;">
                     <div style="display: flex; align-content: center; justify-content: center; background-color: black">
-                        <p style="font-size: 1.45em; color: white; font-weight: 600; margin: 10px;" align=center>Leaky integrate-and-fire network</p>
+                        <p style="font-size: 1.0em; color: white; font-weight: 600; margin: 10px;" align=center>Leaky integrate-and-fire network</p>
                     </div>
                     <div style="display: flex; align-content: center; padding-bottom: 30px; justify-content: center; margin-top: 20px">
-                        <img width="75%" height="100px" style="max-width: 600px;" src="images/LIF_equation.png">
+                        <img width="75%" height="80px" style="max-width: 600px;" src="images/LIF_equation.png">
                     </div>
                     <video align=center style="outline: none" width="100%" height="auto" controls>
                         <source src="videos/LIF_Propagation.mov" type="video/mp4">
@@ -42,14 +42,14 @@
                     </video>
                     <div style="display: flex; align-content: center; justify-content: center; margin-top: 10px">
                         <div style="text-align: justify">
-                            <p style="font-size: 1.0em;">
+                            <p style="font-size: 0.75em;">
                                 tau_m = membrane time constant<br>
                                 u = membrane voltage<br>
                                 u_rest = resting membrane voltage<br>
                                 R = membrane resistance<br>
                                 I(t) = input current at time t<br>
                             </p>
-                            <p style="font-size: 1.5em;">
+                            <p style="font-size: 1.0em;">
                                 In this example, the 2D network is composed of leaky integrate-and-fire neurons. Consistent input activity in the central neuron is recieved, increasing it's membrane voltage until it spikes. When the central neuron spikes, due to its connectivity with it's neighbours, the spike propagates throughout the network. Due to conduction delays with increased distance, this wave slowly propagataes like a ripple on the surface of a pond.
                             </p>
                         </div>
@@ -57,10 +57,10 @@
                 </div>
                 <div class="col-sm-12 col-md-6" style="margin-top: 2.5vh;"">
                     <div style="display: flex; align-content: center; justify-content: center; background-color: black">
-                        <p style="font-size: 1.45em; color: white; font-weight: 600; margin: 10px;" align=center>Kuramoto oscillator network</p>
+                        <p style="font-size: 1.0em; color: white; font-weight: 600; margin: 10px;" align=center>Kuramoto oscillator network</p>
                     </div>
                     <div style="display: flex; align-content: center; padding-bottom: 32px; justify-content: center; margin-top: 20px">
-                        <img width="70%" height="100px" style="max-width: 500px;" src="images/kuramoto_equation.jpeg">
+                        <img width="70%" height="80px" style="max-width: 450px;" src="images/kuramoto_equation.jpeg">
                     </div>
                     <video align=center style="outline: none" width="100%" height="auto"controls>
                         <source src="videos/KuramotoSynchronisation.mov" type="video/mp4">
@@ -68,14 +68,14 @@
                     </video> 
                     <div style="display: flex; align-content: center; justify-content: center; margin-top: 10px">
                         <div style="text-align: justify">
-                            <p style="font-size: 1.0em;">
+                            <p style="font-size: 0.75em;">
                                 theta = Kuramoto oscillator angle<br>
                                 w_i = intrinsic (natural) frequency<br>
                                 K = coupling constant<br>
                                 N = population size<br>
                                 i, j = pre-, post-synaptic neuron<br>
                             </p>
-                            <p style="font-size: 1.5em;">
+                            <p style="font-size: 1.0em;">
                                     Here, the 2D network is composed of coupled Kuramoto oscillators. The coupling strength (K) is starts at zero, but is then suddendly increased. The causes the rapid generation of large travelling waves. The coupling is constant is then brought back to zero. The travelling waves observed in this simulation are notable for the fact that their direction of movement changes markedly from moment to moment (in contrast to the leaky integrate-and-fire network)
                             </p>
                         </div>
@@ -83,16 +83,16 @@
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 0px; background-color: white"> 
+        <div class="container" style="margin-top: 0px; max-width: 75vw; background-color: white"> 
             <div class="row">
                 <div class="col-sm-12">
                     <div style="display: flex; padding-top: 50px; align-content: center; justify-content: center;">
                         <div style="width: 30vw; min-width: 350px; background-color: black">
-                            <p align=center style="font-size: 1.45em; color: white; margin: 10px; font-weight: 600">Python code</p>
+                            <p align=center style="font-size: 1.0em; color: white; margin: 10px; font-weight: 600">Python code</p>
                         </div>
                         
                     </div>
-                <pre style="font-size: 1em">
+                <pre style="font-size: .75em">
                     <code class="python hljs">
 from brian2 import *
 from matplotlib.pyplot import *
