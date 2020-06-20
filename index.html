@@ -14,6 +14,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-169853590-1');
     </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="shortcut icon" href="brain.ico" type="image/x-icon">
     <link rel="icon" href="brain.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -45,6 +46,7 @@
         overflow: hidden;
         color: black;
     }
+    
     </style>
 </head>
 
@@ -365,6 +367,43 @@
                 </tr>
             </table>
         </div>
+
+        <div class="publications-block" style="overflow: auto; display: flex inline-block;">
+            <div id="chart_div" style="width: 100%;"></div>
+            <script src="nodescripts/citationCounts.js"></script>
+            <script>
+                console.log(citationsAcrossYears)
+                google.charts.load('current', {packages: ['corechart', 'bar']});
+                google.charts.setOnLoadCallback(drawBasic);
+                function drawBasic() {
+                    var data = google.visualization.arrayToDataTable([
+                        ['Year', 'Citations', { role: 'style' } ],
+                        ['2015', citationsAcrossYears[0], 'color: rgb(63, 118, 147);'],
+                        ['2016', citationsAcrossYears[1], 'color: rgb(63, 118, 147);'],
+                        ['2017', citationsAcrossYears[2], 'color: rgb(63, 118, 147);'],
+                        ['2018', citationsAcrossYears[3], 'color: rgb(63, 118, 147);'],
+                        ['2019', citationsAcrossYears[4], 'color: rgb(63, 118, 147);'],
+                        ['2020', citationsAcrossYears[5], 'color: rgb(63, 118, 147);'],
+                    ]);
+                    var options = {
+                        hAxis: {viewWindow: {min: -.25, max: 6.25}},
+                        vAxis: {title: 'Citations', viewWindow: {min: 0, max: 90}, ticks: [30,60,90], titleTextStyle:{fontSize: 16}},
+                        legend: {position: 'none'},
+                        chartArea: {'width': '85%', 'height': '80%'},
+                    };
+
+                    function resize () {
+                        var chart = new google.visualization.ColumnChart(
+                        document.getElementById('chart_div'));
+                    chart.draw(data, options);
+                    }
+                    window.onload = resize;
+                    window.onresize = resize;
+                }
+            </script>
+        </div>
+
+
     </div>
 
     <div id="education" style="background-color: white">
@@ -484,7 +523,7 @@
     <script src="js/scripts.min.js"></script>
     <script src="js/sine-waves.js"></script>
     <script src="js/eegOscillations.js"></script>
-    <script src="nodescripts/citationCounts.js"></script>
+    <!--<script src="nodescripts/citationCounts.js"></script> -->
     <script>
         document.getElementById('ticsCitations').innerHTML = ticsCitations
         document.getElementById('firstFrontiersCitations').innerHTML = firstFrontiersCitations

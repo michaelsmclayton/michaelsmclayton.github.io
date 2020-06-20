@@ -28,6 +28,7 @@ rp(options)
         citationCounts = extractCapturedGroups(/gsc_g_al">(\d*)/g);
         citations = extractCapturedGroups(/gsc_a_ac gs_ibl">(\d*)/g);
         articleNames = extractCapturedGroups(/"gsc_a_at">([\w\s:]*)/g);
+        citationsAcrossYears = extractCapturedGroups(/"gsc_g_al">([\w\s:]*)/g);
 
         // Correct empty citations
         for (let i=0; i<citations.length; i++){
@@ -42,7 +43,8 @@ rp(options)
             'var firstFrontiersCitations = ' + citations[1] + '; ' +
             'var ejnCitations = ' + citations[2] + '; ' +
             'var jepgCitations = ' + citations[3] + ';' +
-            'var secondFrontiersCitations = ' + citations[4] + '; '
+            'var secondFrontiersCitations = ' + citations[4] + '; ' + 
+            'var citationsAcrossYears = [' + citationsAcrossYears + ']'
         ;
         var filepath = "citationCounts.js";
         fs.writeFile(filepath, fileContent, (err) => {
