@@ -191,7 +191,7 @@
     <div id="publications" class="background-alt">
         <h2 class="heading">PUBLICATIONS</h2>
         <div class="publications-block">
-            <table style="width:100%">
+            <table id="citationsTable" style="width:100%">
                 <tr>
                     <th></th>
                     <th align="center" style="font-size: .8em">CITATIONS</th> 
@@ -217,7 +217,7 @@
                         </div>
                     </td>
                     <td align="center">
-                    <a id="ticsCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=4531170663848451210"></a>
+                    <a class="citationNumber" id="ticsCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=4531170663848451210"></a>
                     </td>  
                     <td align="center">2015</td>
                     <td align="center">
@@ -249,7 +249,7 @@
                         </div>
                     </td>
                     <td align="center">
-                    <a id="firstFrontiersCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=11983960115731822038&as_sdt=5"></a>
+                    <a class="citationNumber" id="firstFrontiersCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=11983960115731822038&as_sdt=5"></a>
                     </td>  
                     <td align="center">2014</td>
                     <td align="center">
@@ -280,7 +280,7 @@
                         </div>
                     </td>
                     <td align="center">
-                    <a id="ejnCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=15654860799153898398"></a>
+                    <a class="citationNumber" id="ejnCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=15654860799153898398"></a>
                     </td>  
                     <td align="center">2017</td>
                     <td align="center">
@@ -317,7 +317,7 @@
                         </div>
                     </td>
                     <td align="center">
-                        <a id="jepgCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=7262500006602757375"></a>
+                        <a class="citationNumber" id="jepgCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=7262500006602757375"></a>
                     </td>  
                     <td align="center">2019</td>
                     <td align="center">
@@ -356,7 +356,7 @@
                         </div>
                     </td>
                     <td align="center">
-                    <a id="secondFrontiersCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=15746279193612912922&as_sdt=5"></a>
+                    <a class="citationNumber" id="secondFrontiersCitations" href="https://scholar.google.co.uk/scholar?oi=bibs&hl=en&cites=15746279193612912922&as_sdt=5"></a>
                     </td>  
                     <td align="center">2018</td>
                     <td align="center">
@@ -529,6 +529,18 @@
         document.getElementById('ejnCitations').innerHTML = ejnCitations
         document.getElementById('secondFrontiersCitations').innerHTML = secondFrontiersCitations
         document.getElementById('jepgCitations').innerHTML = jepgCitations
+    </script>
+    <!--Javascript to sort citations table-->
+    <script>
+    table = document.getElementById("citationsTable");
+    rows = table.rows;
+    for (i = 1; i < (rows.length-1); i++) {
+      citation1 = parseInt(rows[i].getElementsByTagName("TD")[1].getElementsByClassName("citationNumber").item(0).innerHTML);
+      citation2 = parseInt(rows[i+1].getElementsByTagName("TD")[1].getElementsByClassName("citationNumber").item(0).innerHTML);
+      if (citation1<citation2){
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      }
+    }
     </script>
     <!--Javascript for toggle of abstracts-->
     <script>

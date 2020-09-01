@@ -37,13 +37,29 @@ rp(options)
             }
         }
 
+        reorderedCitations = []
+        for (let i=0; i<articleNames.length; i++){
+            currentArticle = articleNames[i]
+            if (currentArticle == "The roles of cortical oscillations in sustained attention"){
+                reorderedCitations[0] = citations[i]
+            } else if (currentArticle == "Mapping the mechanisms of transcranial alternating current stimulation: a pathway from network effects to cognition"){
+                reorderedCitations[1] = citations[i]
+            } else if (currentArticle == "The many characters of visual alpha oscillations"){
+                reorderedCitations[2] = citations[i]
+            } else if (currentArticle == "Electrical stimulation of alpha oscillations stabilizes performance on visual attention tasks"){
+                reorderedCitations[3] = citations[i]
+            } else if (currentArticle == "The effects of 10 Hz transcranial alternating current stimulation on audiovisual task switching"){
+                reorderedCitations[4] = citations[i]
+            }
+        }
+
         // Save JS file
         var fileContent = 
-            'var ticsCitations = ' + citations[0] + '; ' +
-            'var firstFrontiersCitations = ' + citations[1] + '; ' +
-            'var ejnCitations = ' + citations[2] + '; ' +
-            'var jepgCitations = ' + citations[3] + ';' +
-            'var secondFrontiersCitations = ' + citations[4] + '; ' + 
+            'var ticsCitations = ' + reorderedCitations[0] + '; ' +
+            'var firstFrontiersCitations = ' + reorderedCitations[1] + '; ' +
+            'var ejnCitations = ' + reorderedCitations[2] + '; ' +
+            'var jepgCitations = ' + reorderedCitations[3] + ';' +
+            'var secondFrontiersCitations = ' + reorderedCitations[4] + '; ' + 
             'var citationsAcrossYears = [' + citationsAcrossYears + ']'
         ;
         var filepath = "citationCounts.js";
