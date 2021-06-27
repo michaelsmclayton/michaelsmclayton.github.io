@@ -1,1 +1,1 @@
-var ticsCitations = 284; var firstFrontiersCitations = 53; var ejnCitations = 73; var jepgCitations = 15;var secondFrontiersCitations = 10; var citationsAcrossYears = [10,32,47,76,95,109,64]
+var ticsCitations = 286; var firstFrontiersCitations = 53; var ejnCitations = 76; var jepgCitations = 15;var secondFrontiersCitations = 11; var citationsAcrossYears = [10,32,47,76,95,109,70]
