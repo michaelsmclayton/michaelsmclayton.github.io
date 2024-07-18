@@ -80,7 +80,7 @@
         <div id="lead-content">
             <div id="bg" style="display: flex inline-block; max-height: 200px; align-content: center; justify-content: center">
                 <div class="row" id="personalDescriptionBox" style="margin-top: -7.5vh; margin-left:0vw; align-content: center; justify-content: center; border: 0px solid">
-                    <p id="name" style="font-family: Arial; font-size: 1.75em; color: #FFF"><b>DR. MICHAEL S. CLAYTON</b></p>
+                    <p id="name" style="font-family: Lato; font-size: 1.75em; color: #FFF"><b>DR. MICHAEL S. CLAYTON</b></p>
                 </div>
                 <div class="row" id="canvas-wrapper"">
                     <canvas id="waves" style="max-height: 350px; margin-top: -9.5vh; max-width: 1200px"></canvas>
@@ -101,10 +101,10 @@
     <!-- End #lead -->
 
     <div id="publications" class="background-alt">
-        <a href="https://twitter.com/MClayton_" class="fa fa-twitter" style="font-size: 3.0em; margin-right: 4vw"></a>
-        <a href="https://scholar.google.co.uk/citations?user=wHpPF50AAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-3x" style="font-size: 3.0em; margin-right: 3vw"></i></a>
+        <a href="https://twitter.com/MClayton_" class="fa fa-twitter" style="font-size: 3.0em; margin-right: 0vw; margin-left: 2.5vw;"></a>
+        <a href="https://scholar.google.co.uk/citations?user=wHpPF50AAAAJ&hl=en"><i class="ai ai-google-scholar-square ai-3x" style="font-size: 3.0em; margin-left: 5vw; margin-right: 5vw"></i></a>
         <a href="https://github.com/michaelsmclayton"><i class="fa fa-github" style="font-size:3.0em; margin-right: 3vw"></i></a>    
-        <br><br>
+        <br><br><br>
         <h2 class="heading">ABOUT ME</h2>
         <div class="education-block">
             <!-- ADD HERE -->
@@ -117,7 +117,7 @@
                     Working in the lab of <a href="https://www2.mrc-lmb.cam.ac.uk/group-leaders/t-to-z/marta-zlatic/">Marta Zlatic</a> at the <a href="https://www2.mrc-lmb.cam.ac.uk/">MRC Laboratory of Molecular Biology</a>, I study the small brains of fly larvae, focusing on the neural circuits on memory and action selection.
                     </h4>
                     <h4>
-                    I am a computational scientist with a strong background in software engineering and data analysis.
+                    I am a computational scientist with a strong background in software engineering, neural circuits analysis, and data analysis.
                     </h4>
                     <h4>
                     <b>Core skills:</b>
@@ -129,17 +129,90 @@
         </div>
     </div>
     <!-- End #about -->
+
+    <div id="industry-experience" class="background">
+        <div id="industry-experiences">
+            <h2 class="heading">EXPERIENCE</h2>
+            <div class="experiences-block">
+                <h3>MRC Laboratory of Molecular Biology (Neurobiology)</h3>
+                <span class="education-date">October 2020 - Current</span>
+                <h4 style="line-height: normal; font-size: 1.2em">Post-doctoral Scientist - <a href="https://www2.mrc-lmb.cam.ac.uk/group-leaders/t-to-z/marta-zlatic/">Zlatic lab</a></h4>
+                <a href="https://www.unit9.com/">
+                    <div id="mrclmb" class="col-md-4 imagelogo" style="height: 6em; float: right"></div>
+                </a>
+                <ul>
+                    <li id="bulletpoint">
+                        Created pipelines for preprocessing and analysing functional imaging data recorded from every neuron in the larval nervous system (collected using light- sheet fluorescence microscopy). See <a href="https://www.youtube.com/watch?v=V17JIMqMnF8&feature=youtu.be">example video here</a>
+                    </li>
+                    <li id="bulletpoint">
+                        Developed hardware for automatically tracking fruit fly larvae and delivering heat and light in order to stimulate genetically-targeted neurons
+                    </li>
+                    <li id="bulletpoint">
+                        Designed connectome-constrained computational models of neural circuits involved in learning and memory
+                    </li>
+                    <li id="bulletpoint">
+                        Developed parallelised big-data analysis pipelines on the LMB supercomputer using Dask and SLURM
+                    </li>
+                </ul>
+            </div>
+            <div class="experiences-block">
+                <h3>Unit 9 & Ford</h3>
+                <span class="education-date">January 2019 - October 2020</span>
+                <h4 style="line-height: normal; font-size: 1.2em">Consultant Data Scientist</h4>
+                <a href="https://www.unit9.com/">
+                    <div id="unit9" class="col-md-4 imagelogo" style="height: 6em; float: right"></div>
+                </a>
+                <ul>
+                    <li id="bulletpoint">
+                        Led the analysis of EEG, video, and GPS data on a project with Ford, focused on tracking the mental states of drivers during competitive racing
+                    </li>
+                    <li id="bulletpoint">
+                        Collaborated with scientific and machine learning teams to create automated systems for classifying driving errors and their associated mental states
+                    </li>
+                    <li id="bulletpoint">
+                        <a href="https://www.unit9.com/project/ford-psychology-performance/">Click here</a> to visit the Unit 9 website for the project.
+                    </li>
+                </ul>
+            </div>
+            <div class="experiences-block">
+                <h3>Cambridge Cognition</h3>
+                <span class="education-date">April 2018 - May 2019</span><br>
+                <h4 style="line-height: normal; font-size: 1.2em">Science Intern and Research Engineer</h4>
+                <a href="http://www.cambridgecognition.com/">
+                    <div id="camcog" class="col-md-4 imagelogo" style="height: 6em; float: right"></div>
+                </a>
+                <ul>
+                    <li id="bulletpoint">
+                        Worked on designing platforms to record and analyse voice data for detection of pain using machine learning techniques (<a href="https://www.cambridgecognition.com/news/entry/award-of-funding-to-develop-novel-digital-health-system">see link</a> for project description).
+                    </li>
+                    <li id="bulletpoint">
+                        Led the process of deploying this software on <a href="https://aws.amazon.com/">Amazon Web Services</a>, using <a href=https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> and <a href="https://en.wikipedia.org/wiki/Kubernetes">Kubernetes</a>. Also worked on hardware projects using <a href="https://www.raspberrypi.org/">Raspberry Pi</a> devices.
+                    </li>
+
+                    <li id="bulletpoint">
+                        Designed and developed human cognition tests for online studies (using front-end web technologies).
+                    </li>
+                    <li id="bulletpoint">
+                        Used Mechanical Turk and Prolific Academic to study these tests rapidly and at scale (i.e. n>100 study samples collected within a few hours), and to determine which tests were most suitable for online use.
+                    </li>
+                    <li id="bulletpoint">
+                        Learned about software development cycles, version control (i.e. Git), and the digital health industry.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End #skills -->
+
     <div id="publications" class="background-alt">
         <h2 class="heading">PUBLICATIONS</h2>
         <div class="publications-block">
             <table id="citationsTable" style="width:100%">
                 <tr>
                     <th></th>
-                    <th align="center" style="font-size: .8em">CITATIONS</th> 
                     <th align="center" style="font-size: .8em">YEAR</th>
                     <th align="center" style="font-size: .8em">PDF</th>
                 </tr>
-
                 <tr>
                     <td>
                         <a href="https://www.cell.com/trends/cognitive-sciences/fulltext/S1364-6613(15)00028-5">
@@ -235,6 +308,23 @@
                         </a>
                     </td>
                 </tr>
+
+                <tr>
+                    <td>
+                        <a href="https://arxiv.org/abs/2405.03225">
+                            <span>Consistent response prediction for multilayer networks on unknown manifolds</span><br>
+                        </a>
+                        <h3>Aranyak Acharyya, Jesús Arroyo Relión, <b>Michael Clayton</b>, Marta Zlatic, Youngser Park, Carey E. Priebe</h3><br>
+                        <h3><i>arXiv preprint arXiv:2405.03225</i></h3>
+                    </td>
+                    <td align="center">2024</td>
+                    <td align="center">
+                        <a href="https://arxiv.org/pdf/2405.03225">
+                            <img width=23 src="./images/pdf.png">
+                        </a>
+                    </td>
+                </tr>
+
             </table>
         </div>
         <!--
@@ -319,74 +409,9 @@
                 </li>
             </ul>
         </div>
-
-        <div class="education-block">
-            <h3>Epsom College</h3>
-            <span class="education-date">September 2004 - June 2009</span><br>
-            <ul>
-                <li id="bulletpoint" style="margin-top: 2em">
-                    A Levels: A, A, B (English, Politics, Biology)
-                </li>
-                <li id="bulletpoint">
-                    GCSE: 1 A*, 6 As, 1 B, 2 Cs
-                </li>
-            </ul>
-        </div>
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
-
-    <div id="industry-experience" class="background-alt">
-        <div id="industry-experiences">
-            <h2 class="heading">INDUSTRY EXPERIENCE</h2>
-            <div class="experiences-block">
-                <h3>Unit 9 & Ford</h3>
-                <span class="education-date">January 2019 - present</span>
-                <h4 style="line-height: normal; font-size: 1.2em">Consultant Data Scientist</h4>
-                <a href="https://www.unit9.com/">
-                    <div id="unit9" class="col-md-4 imagelogo" style="height: 6em; float: right"></div>
-                </a>
-                <ul>
-                    <li id="bulletpoint">
-                        Led the analysis of EEG, video, and GPS data on a project with Ford, focused on tracking the mental states of drivers during competitive racing
-                    </li>
-                    <li id="bulletpoint">
-                        Collaborated with scientific and machine learning teams to create automated systems for classifying driving errors and their associated mental states
-                    </li>
-                    <li id="bulletpoint">
-                        <a href="https://www.unit9.com/project/ford-psychology-performance/">Click here</a> to visit the Unit 9 website for the project.
-                    </li>
-                </ul>
-            </div>
-            <div class="experiences-block">
-                <h3>Cambridge Cognition</h3>
-                <span class="education-date">April 2018 - May 2019</span><br>
-                <h4 style="line-height: normal; font-size: 1.2em">Science Intern and Research Engineer</h4>
-                <a href="http://www.cambridgecognition.com/">
-                    <div id="camcog" class="col-md-4 imagelogo" style="height: 6em; float: right"></div>
-                </a>
-                <ul>
-                    <li id="bulletpoint">
-                        Worked on designing platforms to record and analyse voice data for detection of pain using machine learning techniques (<a href="https://www.cambridgecognition.com/news/entry/award-of-funding-to-develop-novel-digital-health-system">see link</a> for project description).
-                    </li>
-                    <li id="bulletpoint">
-                        Led the process of deploying this software on <a href="https://aws.amazon.com/">Amazon Web Services</a>, using <a href=https://en.wikipedia.org/wiki/Docker_(software)">Docker</a> and <a href="https://en.wikipedia.org/wiki/Kubernetes">Kubernetes</a>. Also worked on hardware projects using <a href="https://www.raspberrypi.org/">Raspberry Pi</a> devices.
-                    </li>
-
-                    <li id="bulletpoint">
-                        Designed and developed human cognition tests for online studies (using front-end web technologies).
-                    </li>
-                    <li id="bulletpoint">
-                        Used Mechanical Turk and Prolific Academic to study these tests rapidly and at scale (i.e. n>100 study samples collected within a few hours), and to determine which tests were most suitable for online use.
-                    </li>
-                    <li id="bulletpoint">
-                        Learned about software development cycles, version control (i.e. Git), and the digital health industry.
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- End #skills -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
