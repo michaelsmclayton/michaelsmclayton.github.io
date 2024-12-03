@@ -188,8 +188,8 @@ if neuronType == 'Kuramoto':
         kN : 1
     '''
     G = NeuronGroup(N, eqs, threshold='True', method='euler')
-    G.Theta = '1-(randn()*2)'
-    G.freq = '2*(i/N)'
+    G.Theta = '2*(i/N)'
+    G.freq = '1-(randn()*2)'
     trace = StateMonitor(G, ['Theta'], record=True)
     S = Synapses(G, G, on_pre = '''ThetaPreInput_post = Theta_pre''', method='euler')
 
@@ -209,11 +209,11 @@ if useVariableDelays==True:
 print('Running simulation...')
 duration = 10*ms
 if neuronType == 'Kuramoto':
-    G.kN = 3
+    G.kN = 7
     run(duration, report='text')
     G.kN = 0
     run(duration*6, report='text')
-    G.kN = 3
+    G.kN = 7
     run(duration, report='text')
     G.kN = 0
     run(duration*6, report='text')
